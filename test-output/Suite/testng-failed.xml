@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="listeners.ListenerTestNg"/>
+  </listeners>
+  <test name="Test">
+    <classes>
+      <class name="tests.HomePageTests"/>
+      <class name="tests.RegistrationTests"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="tests.RegistrationTests">
+        <methods>
+          <include name="verifyRegistration"/>
+        </methods>
+      </class> <!-- tests.RegistrationTests -->
+      <class name="tests.HomePageTests">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="verifyLogin"/>
+          <include name="setUpBrowser"/>
+        </methods>
+      </class> <!-- tests.HomePageTests -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

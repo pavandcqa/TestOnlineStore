@@ -1,0 +1,8 @@
+tests\HadlingMultipleWebElements.class
+utilities\ReadConfiguration.class
+base\TestBase.class
+tests\HomePageTests.class
+tests\RegistrationTests.class
+pages\RegistrationPageObjects.class
+pages\HomePageObjects.class
+listeners\ListenerTestNg.class

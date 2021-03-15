@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 33.003 s <<< FAILURE! - in TestSuite
+tests.HomePageTests.verifyLogin  Time elapsed: 4.494 s  <<< FAILURE!
+java.lang.AssertionError: Already Registered Section not present.. expected [Already registered?] but found [ALREADY REGISTERED?]
+	at tests.HomePageTests.verifyLogin(HomePageTests.java:22)
+
+tests.RegistrationTests.verifyRegistration  Time elapsed: 0.46 s  <<< FAILURE!
+java.lang.NullPointerException
+	at tests.RegistrationTests.verifyRegistration(RegistrationTests.java:16)
+
